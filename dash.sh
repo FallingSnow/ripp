@@ -1,0 +1,1 @@
+ffmpeg -fflags nobuffer -re -i ~/Videos/\[AnimeRG\]\ One\ Piece\ -\ 001\ \[Special\ Edition\ HD\ Widescreen\]\ \[Dual-Audio\]\ \[720p\]\ \[x265\]\ \[pseudo\].mkv -map 0:v\? -map 0:a\? -c:a libopus -b:a 80k -c:v libx265 -crf 20 -adaptation_sets "id=0,streams=v id=1,streams=a" -vf scale=-16:480 -f dash /tmp/index.mpd -y

@@ -1,0 +1,29 @@
+{
+  "name": "@ripp/server",
+  "version": "0.1.0",
+  "description": "Rest in Peace Plux",
+  "main": "index.js",
+  "repository": "git@github.com:FallingSnow/ripp.git",
+  "author": "Ayrton Sparling <ayrton@sparling.us>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "bin/ripp.js"
+  },
+  "dependencies": {
+    "ayyo": "git+https://github.com/FallingSnow/ayyo.git",
+    "chalk": "^2.4.2",
+    "esm": "^3.2.25",
+    "file-type": "^12.3.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "graphql": "^14.4.2",
+    "graphql-tools": "^4.0.5",
+    "level": "^5.0.1",
+    "m3u8-parser": "^4.4.0",
+    "mime": "^2.4.4",
+    "nmmes-tracer": "git+https://github.com/NMMES/nmmes-tracer.git",
+    "selfsigned": "^1.10.4",
+    "video.js": "^7.6.0",
+    "videojs-contrib-quality-levels": "^2.0.9"
+  }
+}

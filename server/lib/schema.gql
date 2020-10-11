@@ -1,0 +1,39 @@
+type Video {
+  name: String!
+  year: Int
+  path: String!
+  metadata: String
+}
+
+type Directory {
+  path: String!
+  relativePath: String!
+}
+
+type Library {
+  name: String!
+  videos: [Video]
+  count: Int
+}
+
+type Query {
+  libraries(name: String): [Library!]
+  directories(at: String): [Directory]
+}
+
+input LibraryInput {
+  path: String!
+}
+
+type Create {
+  library(library: LibraryInput!): Library!
+}
+
+type Mutation {
+  create: Create
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}

@@ -1,0 +1,17 @@
+{
+    "presets": [
+        ["@babel/preset-env", {
+            "modules": "false",
+            "targets": {
+                "browsers": ["last 2 versions", "safari >= 7"]
+            }
+        }], "@babel/preset-react", ["@emotion/babel-preset-css-prop", {
+            "autoLabel": true,
+            "labelFormat": "[local]"
+        }]
+    ],
+    "plugins": ["babel-plugin-root-import", ["wildcard", {
+            "exts": ["js", "es6", "es", "jsx", "javascript", ""]
+        }], "react-hot-loader/babel", "@babel/plugin-proposal-export-namespace-from", "@babel/plugin-proposal-class-properties", "@babel/plugin-transform-runtime", "@babel/plugin-syntax-dynamic-import"
+    ]
+}
